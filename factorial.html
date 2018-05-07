@@ -5,6 +5,8 @@
 	function factorial(n)
 	{
 		var a = n;
+		if( a > 0)
+		{
 		var total = 1;
 		for (var i = a; i > 0; i = i - 1 )
 		{
@@ -12,6 +14,11 @@
 			
 		}
 		console.log(total);
+		}
+		else
+		{
+			console.log("Please enter a number greater than 0!");
+		}
 	}
 	var a = prompt("Give me a number to find the factorial of:");
 	
